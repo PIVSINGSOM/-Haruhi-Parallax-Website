@@ -1,0 +1,52 @@
+body{
+	font-family: 'Francois One', sans-serif;
+}
+.head{
+	height: 100vh;
+	width: 100%;
+	border-color: 1px solid black;
+}
+#top-image {
+	background:url('img/bg.jpg') -25px -50px;
+	filter: blur(3px);
+	background-repeat: no-repeat;
+	position:fixed;
+	top:0;
+	left: 0;
+	width:100%;
+	z-index:0;
+	height:100%;
+	background-size: calc(100% + 50px);
+}
+#img{
+	height: 100%;
+	z-index:1;
+	position:fixed;
+	float: right;
+	filter: drop-shadow(5px 5px 5px #222);
+}
+#name-item{
+	z-index:1;
+	position:relative;
+	margin-top:-1150px;
+	margin-left: 850px;
+
+}
+#name-item>p{
+	font-size: 250px;
+	color: #f500d2;
+	filter: drop-shadow(3px 3px 3px #f500d2);
+}
+#logo{
+	margin-left: 1980px;
+	
+	height: 100px;
+	width: 100px;
+	z-index:1;
+	position:fixed;
+	filter: drop-shadow(3px 3px 3px #222);
+	transform: rotate(90deg);
+}
+#logo>img{
+	height: 100%;
+}
