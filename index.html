@@ -33,7 +33,7 @@
 			s.parentNode.insertBefore(t, s)
 		}(window, document, 'script',
 			'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('consent', isConsentGrant() ? 'grant' : 'revoke');
+
 		fbq('init', '565393478233310');
 		fbq('track', 'PageView');
 	</script>
@@ -65,6 +65,10 @@
 	<script id="becookies.tech-scripts" src="https://dev.becookies.tech/script.js" data-id="6274c1122d61f5ac8b8b63b5"
 		charset="utf-8"></script>
 
+
+	<script>
+		fbq('consent', isConsentGrant() ? 'grant' : 'revoke');
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
