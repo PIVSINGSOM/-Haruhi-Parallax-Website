@@ -33,7 +33,7 @@
 			s.parentNode.insertBefore(t, s)
 		}(window, document, 'script',
 			'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('consent', isConsentGrant ? 'grant' : 'revoke');
+		fbq('consent', isConsentGrant() ? 'grant' : 'revoke');
 		fbq('init', '565393478233310');
 		fbq('track', 'PageView');
 	</script>
